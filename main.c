@@ -1,4 +1,4 @@
- #include "quotes.h"
+#include "quotes.h"
 #include <time.h>
 
 int main() {
@@ -14,8 +14,10 @@ int main() {
         "Why do programmers hate nature? It has too many bugs.",
         "There are only 10 types of people in the world: Those who understand binary and those who don't."
     };
+    char** quotes_table = create_quotes_table(MAX_QUOTES, quotes);
 
     srand(time(NULL));
-    print_random_quote(quotes);
+
+    print_random_quote(quotes_table);
     return 0;
 }
