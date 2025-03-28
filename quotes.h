@@ -11,7 +11,7 @@
 void print_quote(char ** quotes, int index);
 void print_random_quote(char ** quotes);
 void add_quote(char ** quotes, char* quote);
-char** create_quotes_table(int n, char** quotes);
+char** create_quotes_table();
 
 
 #endif
